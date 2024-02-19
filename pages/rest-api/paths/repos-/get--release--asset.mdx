@@ -1,0 +1,94 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/repos/{owner}/{repo}/releases/assets/{asset_id}`
+
+Get a release asset
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+| asset_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The unique identifier of the asset. | integer in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "302", "404"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "url": "",
+    "browser_download_url": "",
+    "node_id": "",
+    "name": "",
+    "label": "",
+    "state": "",
+    "content_type": "",
+    "created_at": "",
+    "updated_at": "",
+    "uploader": {
+        "name": "",
+        "email": "",
+        "login": "",
+        "id": 1,
+        "node_id": "",
+        "avatar_url": "",
+        "gravatar_id": "",
+        "url": "",
+        "html_url": "",
+        "followers_url": "",
+        "following_url": "",
+        "gists_url": "",
+        "starred_url": "",
+        "subscriptions_url": "",
+        "organizations_url": "",
+        "repos_url": "",
+        "events_url": "",
+        "received_events_url": "",
+        "type": "",
+        "starred_at": ""
+    }
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

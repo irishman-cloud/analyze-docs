@@ -1,0 +1,72 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/rate_limit`
+
+Get rate limit status for the authenticated user
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "304", "404"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "resources": {
+        "core": {},
+        "graphql": {},
+        "search": {},
+        "source_import": {},
+        "integration_manifest": {},
+        "code_scanning_upload": {},
+        "actions_runner_registration": {},
+        "scim": {},
+        "dependency_snapshots": {}
+    },
+    "rate": {}
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

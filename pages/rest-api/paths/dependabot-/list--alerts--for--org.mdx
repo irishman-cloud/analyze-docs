@@ -1,0 +1,133 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/orgs/{org}/dependabot/alerts`
+
+List Dependabot alerts for an organization
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| org <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The organization name. The name is not case sensitive. | string in path | `undefined` |
+| state  | A comma-separated list of states. If specified, only alerts with these states will be returned.
+
+Can be: `dismissed`, `fixed`, `open` | string in query | `undefined` |
+| severity  | A comma-separated list of severities. If specified, only alerts with these severities will be returned.
+
+Can be: `low`, `medium`, `high`, `critical` | string in query | `undefined` |
+| ecosystem  | A comma-separated list of ecosystems. If specified, only alerts for these ecosystems will be returned.
+
+Can be: `composer`, `go`, `maven`, `npm`, `nuget`, `pip`, `pub`, `rubygems`, `rust` | string in query | `undefined` |
+| package  | A comma-separated list of package names. If specified, only alerts for these packages will be returned. | string in query | `undefined` |
+| scope  | The scope of the vulnerable dependency. If specified, only alerts with this scope will be returned. | string in query | `undefined` |
+| sort  | The property by which to sort the results.
+`created` means when the alert was created.
+`updated` means when the alert's state last changed. | string in query | `undefined` |
+| direction  | The direction to sort the results by. | string in query | `undefined` |
+| before  | A cursor, as given in the [Link header](https://docs.github.com/rest/overview/resources-in-the-rest-api#link-header). If specified, the query only searches for results before this cursor. | string in query | `undefined` |
+| after  | A cursor, as given in the [Link header](https://docs.github.com/rest/overview/resources-in-the-rest-api#link-header). If specified, the query only searches for results after this cursor. | string in query | `undefined` |
+| first  | The number of results per page (max 100), starting from the first matching result.
+This parameter must not be used in combination with `last`. | integer in query | `undefined` |
+| last  | The number of results per page (max 100), starting from the last matching result.
+This parameter must not be used in combination with `first`. | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "304", "400", "403", "404", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+[]
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        ""
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

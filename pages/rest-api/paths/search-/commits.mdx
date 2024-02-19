@@ -1,0 +1,49 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/search/commits`
+
+Search commits
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| q <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as the web interface for GitHub. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See "[Searching commits](https://docs.github.com/search-github/searching-on-github/searching-commits)" for a detailed list of qualifiers. | string in query | `undefined` |
+| sort  | Sorts the results of your query by `author-date` or `committer-date`. Default: [best match](https://docs.github.com/rest/reference/search#ranking-search-results) | string in query | `undefined` |
+| order  | Determines whether the first search result returned is the highest number of matches (`desc`) or lowest number of matches (`asc`). This parameter is ignored unless you provide `sort`. | string in query | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "304"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "items": []
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

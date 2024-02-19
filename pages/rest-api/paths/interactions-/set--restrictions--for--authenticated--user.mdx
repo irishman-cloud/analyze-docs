@@ -1,0 +1,65 @@
+import { Tabs } from 'nextra/components'
+
+# PUT - `/user/interaction-limits`
+
+Set interaction restrictions for your public repositories
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "limit": "",
+    "origin": "",
+    "expires_at": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

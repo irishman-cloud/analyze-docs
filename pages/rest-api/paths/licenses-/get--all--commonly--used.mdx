@@ -1,0 +1,70 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/licenses`
+
+Get all commonly used licenses
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| featured  |  | boolean in query | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "304"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+[
+    {
+        "key": "",
+        "name": "",
+        "url": "",
+        "spdx_id": "",
+        "node_id": "",
+        "html_url": ""
+    },
+    {
+        "key": "",
+        "name": "",
+        "url": "",
+        "spdx_id": "",
+        "node_id": "",
+        "html_url": ""
+    },
+    {
+        "key": "",
+        "name": "",
+        "url": "",
+        "spdx_id": "",
+        "node_id": "",
+        "html_url": ""
+    }
+]
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

@@ -1,0 +1,132 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/repos/{owner}/{repo}/pulls/{pull_number}/files`
+
+List pull requests files
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+| pull_number <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The number that identifies the pull request. | integer in path | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "422", "500", "503"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+[
+    {
+        "sha": "",
+        "filename": "",
+        "status": "",
+        "additions": 103,
+        "deletions": 21,
+        "changes": 124,
+        "blob_url": "",
+        "raw_url": "",
+        "contents_url": "",
+        "patch": "",
+        "previous_filename": ""
+    },
+    {
+        "sha": "",
+        "filename": "",
+        "status": "",
+        "additions": 103,
+        "deletions": 21,
+        "changes": 124,
+        "blob_url": "",
+        "raw_url": "",
+        "contents_url": "",
+        "patch": "",
+        "previous_filename": ""
+    },
+    {
+        "sha": "",
+        "filename": "",
+        "status": "",
+        "additions": 103,
+        "deletions": 21,
+        "changes": 124,
+        "blob_url": "",
+        "raw_url": "",
+        "contents_url": "",
+        "patch": "",
+        "previous_filename": ""
+    }
+]
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "code": "",
+    "message": "",
+    "documentation_url": ""
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

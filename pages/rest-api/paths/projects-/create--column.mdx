@@ -1,0 +1,106 @@
+import { Tabs } from 'nextra/components'
+
+# POST - `/projects/{project_id}/columns`
+
+Create a project column
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| project_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The unique identifier of the project. | integer in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["201", "304", "401", "403", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "url": "",
+    "project_url": "",
+    "cards_url": "",
+    "id": 42,
+    "node_id": "",
+    "name": "",
+    "created_at": "",
+    "updated_at": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        "",
+        "",
+        ""
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

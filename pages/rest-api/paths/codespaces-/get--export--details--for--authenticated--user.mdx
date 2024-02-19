@@ -1,0 +1,57 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/user/codespaces/{codespace_name}/exports/{export_id}`
+
+Get details about a codespace export
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| codespace_name <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the codespace. | string in path | `undefined` |
+| export_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The ID of the export operation, or `latest`. Currently only `latest` is currently supported. | string in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "404"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "state": "",
+    "completed_at": "",
+    "branch": "",
+    "sha": "",
+    "id": "",
+    "export_url": "",
+    "html_url": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

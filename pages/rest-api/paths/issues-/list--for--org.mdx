@@ -1,0 +1,56 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/orgs/{org}/issues`
+
+List organization issues assigned to the authenticated user
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| org <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The organization name. The name is not case sensitive. | string in path | `undefined` |
+| filter  | Indicates which sorts of issues to return. `assigned` means issues assigned to you. `created` means issues created by you. `mentioned` means issues mentioning you. `subscribed` means issues you're subscribed to updates for. `all` or `repos` means all issues you can see, regardless of participation or creation. | string in query | `undefined` |
+| state  | Indicates the state of the issues to return. | string in query | `undefined` |
+| labels  | A list of comma separated label names. Example: `bug,ui,@high` | string in query | `undefined` |
+| sort  | What to sort results by. | string in query | `undefined` |
+| direction  | The direction to sort the results by. | string in query | `undefined` |
+| since  | Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. | string in query | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "404"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+[]
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

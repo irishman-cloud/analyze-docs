@@ -1,0 +1,115 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/app/installations`
+
+List installations for the authenticated app
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+| since  | Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. | string in query | `undefined` |
+| outdated  |  | string in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200"]}>
+
+<Tabs.Tab>
+
+The permissions the installation has are included under the `permissions` key.
+
+```json
+
+[
+    {
+        "id": 1,
+        "account": {},
+        "repository_selection": "",
+        "access_tokens_url": "",
+        "repositories_url": "",
+        "html_url": "",
+        "app_id": 1,
+        "target_type": "",
+        "permissions": {
+            "actions": "",
+            "administration": "",
+            "checks": "",
+            "contents": "",
+            "deployments": "",
+            "environments": "",
+            "issues": "",
+            "metadata": "",
+            "packages": "",
+            "pages": "",
+            "pull_requests": "",
+            "repository_announcement_banners": "",
+            "repository_hooks": "",
+            "repository_projects": "",
+            "secret_scanning_alerts": "",
+            "secrets": "",
+            "security_events": "",
+            "single_file": "",
+            "statuses": "",
+            "vulnerability_alerts": "",
+            "workflows": "",
+            "members": "",
+            "organization_administration": "",
+            "organization_custom_roles": "",
+            "organization_announcement_banners": "",
+            "organization_hooks": "",
+            "organization_plan": "",
+            "organization_projects": "",
+            "organization_packages": "",
+            "organization_secrets": "",
+            "organization_self_hosted_runners": "",
+            "organization_user_blocking": "",
+            "team_discussions": ""
+        },
+        "events": [
+            ""
+        ],
+        "created_at": "",
+        "updated_at": "",
+        "single_file_name": "",
+        "has_multiple_single_files": true,
+        "single_file_paths": [
+            ""
+        ],
+        "app_slug": "",
+        "suspended_by": {
+            "name": "",
+            "email": "",
+            "login": "",
+            "id": 1,
+            "node_id": "",
+            "avatar_url": "",
+            "gravatar_id": "",
+            "url": "",
+            "html_url": "",
+            "followers_url": "",
+            "following_url": "",
+            "gists_url": "",
+            "starred_url": "",
+            "subscriptions_url": "",
+            "organizations_url": "",
+            "repos_url": "",
+            "events_url": "",
+            "received_events_url": "",
+            "type": "",
+            "starred_at": ""
+        },
+        "suspended_at": "",
+        "contact_email": ""
+    }
+]
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

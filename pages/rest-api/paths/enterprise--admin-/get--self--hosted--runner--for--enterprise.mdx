@@ -1,0 +1,47 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/enterprises/{enterprise}/actions/runners/{runner_id}`
+
+Get a self-hosted runner for an enterprise
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| enterprise <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The slug version of the enterprise name. You can also substitute this value with the enterprise id. | string in path | `undefined` |
+| runner_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | Unique identifier of the self-hosted runner. | integer in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "id": 5,
+    "name": "",
+    "os": "",
+    "status": "",
+    "labels": [
+        {
+            "name": "",
+            "type": ""
+        },
+        {
+            "name": "",
+            "type": ""
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

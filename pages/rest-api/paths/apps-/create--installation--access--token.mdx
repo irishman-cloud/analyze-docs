@@ -1,0 +1,175 @@
+import { Tabs } from 'nextra/components'
+
+# POST - `/app/installations/{installation_id}/access_tokens`
+
+Create an installation access token for an app
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| installation_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The unique identifier of the installation. | integer in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["201", "401", "403", "404", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "token": "",
+    "expires_at": "",
+    "permissions": {
+        "actions": "",
+        "administration": "",
+        "checks": "",
+        "contents": "",
+        "deployments": "",
+        "environments": "",
+        "issues": "",
+        "metadata": "",
+        "packages": "",
+        "pages": "",
+        "pull_requests": "",
+        "repository_announcement_banners": "",
+        "repository_hooks": "",
+        "repository_projects": "",
+        "secret_scanning_alerts": "",
+        "secrets": "",
+        "security_events": "",
+        "single_file": "",
+        "statuses": "",
+        "vulnerability_alerts": "",
+        "workflows": "",
+        "members": "",
+        "organization_administration": "",
+        "organization_custom_roles": "",
+        "organization_announcement_banners": "",
+        "organization_hooks": "",
+        "organization_plan": "",
+        "organization_projects": "",
+        "organization_packages": "",
+        "organization_secrets": "",
+        "organization_self_hosted_runners": "",
+        "organization_user_blocking": "",
+        "team_discussions": ""
+    },
+    "repository_selection": "",
+    "repositories": [],
+    "single_file": "",
+    "has_multiple_single_files": true,
+    "single_file_paths": [
+        "",
+        "",
+        "",
+        ""
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

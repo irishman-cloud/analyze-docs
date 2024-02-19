@@ -1,0 +1,329 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews`
+
+Get pull request review protection
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+| branch <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the branch. | string in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "url": "",
+    "dismissal_restrictions": {
+        "users": [
+            {
+                "name": "",
+                "email": "",
+                "login": "",
+                "id": 1,
+                "node_id": "",
+                "avatar_url": "",
+                "gravatar_id": "",
+                "url": "",
+                "html_url": "",
+                "followers_url": "",
+                "following_url": "",
+                "gists_url": "",
+                "starred_url": "",
+                "subscriptions_url": "",
+                "organizations_url": "",
+                "repos_url": "",
+                "events_url": "",
+                "received_events_url": "",
+                "type": "",
+                "starred_at": ""
+            }
+        ],
+        "teams": [
+            {
+                "node_id": "",
+                "name": "",
+                "slug": "",
+                "description": "",
+                "privacy": "",
+                "permission": "",
+                "permissions": {},
+                "url": "",
+                "html_url": "",
+                "members_url": "",
+                "repositories_url": "",
+                "parent": {
+                    "id": 1,
+                    "node_id": "",
+                    "url": "",
+                    "members_url": "",
+                    "name": "",
+                    "description": "",
+                    "permission": "",
+                    "privacy": "",
+                    "html_url": "",
+                    "repositories_url": "",
+                    "slug": "",
+                    "ldap_dn": ""
+                }
+            },
+            {
+                "node_id": "",
+                "name": "",
+                "slug": "",
+                "description": "",
+                "privacy": "",
+                "permission": "",
+                "permissions": {},
+                "url": "",
+                "html_url": "",
+                "members_url": "",
+                "repositories_url": "",
+                "parent": {
+                    "id": 1,
+                    "node_id": "",
+                    "url": "",
+                    "members_url": "",
+                    "name": "",
+                    "description": "",
+                    "permission": "",
+                    "privacy": "",
+                    "html_url": "",
+                    "repositories_url": "",
+                    "slug": "",
+                    "ldap_dn": ""
+                }
+            }
+        ],
+        "apps": [
+            {
+                "id": 37,
+                "slug": "",
+                "node_id": "",
+                "owner": {
+                    "name": "",
+                    "email": "",
+                    "login": "",
+                    "id": 1,
+                    "node_id": "",
+                    "avatar_url": "",
+                    "gravatar_id": "",
+                    "url": "",
+                    "html_url": "",
+                    "followers_url": "",
+                    "following_url": "",
+                    "gists_url": "",
+                    "starred_url": "",
+                    "subscriptions_url": "",
+                    "organizations_url": "",
+                    "repos_url": "",
+                    "events_url": "",
+                    "received_events_url": "",
+                    "type": "",
+                    "starred_at": ""
+                },
+                "name": "",
+                "description": "",
+                "external_url": "",
+                "html_url": "",
+                "created_at": "",
+                "updated_at": "",
+                "permissions": {
+                    "issues": "",
+                    "checks": "",
+                    "metadata": "",
+                    "contents": "",
+                    "deployments": ""
+                },
+                "events": [
+                    "",
+                    ""
+                ],
+                "installations_count": 5,
+                "client_id": "",
+                "client_secret": "",
+                "webhook_secret": "",
+                "pem": ""
+            }
+        ],
+        "url": "",
+        "users_url": "",
+        "teams_url": ""
+    },
+    "bypass_pull_request_allowances": {
+        "users": [
+            {
+                "name": "",
+                "email": "",
+                "login": "",
+                "id": 1,
+                "node_id": "",
+                "avatar_url": "",
+                "gravatar_id": "",
+                "url": "",
+                "html_url": "",
+                "followers_url": "",
+                "following_url": "",
+                "gists_url": "",
+                "starred_url": "",
+                "subscriptions_url": "",
+                "organizations_url": "",
+                "repos_url": "",
+                "events_url": "",
+                "received_events_url": "",
+                "type": "",
+                "starred_at": ""
+            },
+            {
+                "name": "",
+                "email": "",
+                "login": "",
+                "id": 1,
+                "node_id": "",
+                "avatar_url": "",
+                "gravatar_id": "",
+                "url": "",
+                "html_url": "",
+                "followers_url": "",
+                "following_url": "",
+                "gists_url": "",
+                "starred_url": "",
+                "subscriptions_url": "",
+                "organizations_url": "",
+                "repos_url": "",
+                "events_url": "",
+                "received_events_url": "",
+                "type": "",
+                "starred_at": ""
+            }
+        ],
+        "teams": [
+            {
+                "node_id": "",
+                "name": "",
+                "slug": "",
+                "description": "",
+                "privacy": "",
+                "permission": "",
+                "permissions": {},
+                "url": "",
+                "html_url": "",
+                "members_url": "",
+                "repositories_url": "",
+                "parent": {
+                    "id": 1,
+                    "node_id": "",
+                    "url": "",
+                    "members_url": "",
+                    "name": "",
+                    "description": "",
+                    "permission": "",
+                    "privacy": "",
+                    "html_url": "",
+                    "repositories_url": "",
+                    "slug": "",
+                    "ldap_dn": ""
+                }
+            },
+            {
+                "node_id": "",
+                "name": "",
+                "slug": "",
+                "description": "",
+                "privacy": "",
+                "permission": "",
+                "permissions": {},
+                "url": "",
+                "html_url": "",
+                "members_url": "",
+                "repositories_url": "",
+                "parent": {
+                    "id": 1,
+                    "node_id": "",
+                    "url": "",
+                    "members_url": "",
+                    "name": "",
+                    "description": "",
+                    "permission": "",
+                    "privacy": "",
+                    "html_url": "",
+                    "repositories_url": "",
+                    "slug": "",
+                    "ldap_dn": ""
+                }
+            }
+        ],
+        "apps": [
+            {
+                "id": 37,
+                "slug": "",
+                "node_id": "",
+                "owner": {
+                    "name": "",
+                    "email": "",
+                    "login": "",
+                    "id": 1,
+                    "node_id": "",
+                    "avatar_url": "",
+                    "gravatar_id": "",
+                    "url": "",
+                    "html_url": "",
+                    "followers_url": "",
+                    "following_url": "",
+                    "gists_url": "",
+                    "starred_url": "",
+                    "subscriptions_url": "",
+                    "organizations_url": "",
+                    "repos_url": "",
+                    "events_url": "",
+                    "received_events_url": "",
+                    "type": "",
+                    "starred_at": ""
+                },
+                "name": "",
+                "description": "",
+                "external_url": "",
+                "html_url": "",
+                "created_at": "",
+                "updated_at": "",
+                "permissions": {
+                    "issues": "",
+                    "checks": "",
+                    "metadata": "",
+                    "contents": "",
+                    "deployments": ""
+                },
+                "events": [
+                    ""
+                ],
+                "installations_count": 5,
+                "client_id": "",
+                "client_secret": "",
+                "webhook_secret": "",
+                "pem": ""
+            }
+        ]
+    },
+    "dismiss_stale_reviews": true,
+    "require_code_owner_reviews": true,
+    "required_approving_review_count": 2,
+    "require_last_push_approval": true
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

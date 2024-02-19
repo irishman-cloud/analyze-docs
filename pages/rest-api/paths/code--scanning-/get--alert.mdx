@@ -1,0 +1,170 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}`
+
+Get a code scanning alert
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+| alert_number <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The number that identifies an alert. You can find this at the end of the URL for a code scanning alert within GitHub, and in the `number` field in the response from the `GET /repos/{owner}/{repo}/code-scanning/alerts` operation. | integer in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "304", "403", "404", "503"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "created_at": "",
+    "updated_at": "",
+    "url": "",
+    "html_url": "",
+    "instances_url": "",
+    "state": "",
+    "fixed_at": "",
+    "dismissed_by": {
+        "name": "",
+        "email": "",
+        "login": "",
+        "id": 1,
+        "node_id": "",
+        "avatar_url": "",
+        "gravatar_id": "",
+        "url": "",
+        "html_url": "",
+        "followers_url": "",
+        "following_url": "",
+        "gists_url": "",
+        "starred_url": "",
+        "subscriptions_url": "",
+        "organizations_url": "",
+        "repos_url": "",
+        "events_url": "",
+        "received_events_url": "",
+        "type": "",
+        "starred_at": ""
+    },
+    "dismissed_at": "",
+    "dismissed_reason": "",
+    "dismissed_comment": "",
+    "rule": {
+        "id": "",
+        "name": "",
+        "severity": "",
+        "security_severity_level": "",
+        "description": "",
+        "full_description": "",
+        "tags": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "help": "",
+        "help_uri": ""
+    },
+    "tool": {
+        "name": "",
+        "version": "",
+        "guid": ""
+    },
+    "most_recent_instance": {
+        "ref": "",
+        "analysis_key": "",
+        "environment": "",
+        "category": "",
+        "state": "",
+        "commit_sha": "",
+        "message": {
+            "text": ""
+        },
+        "location": {
+            "path": ""
+        },
+        "html_url": "",
+        "classifications": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    }
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "code": "",
+    "message": "",
+    "documentation_url": ""
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

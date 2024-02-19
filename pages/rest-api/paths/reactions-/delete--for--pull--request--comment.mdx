@@ -1,0 +1,34 @@
+import { Tabs } from 'nextra/components'
+
+# DELETE - `/repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions/{reaction_id}`
+
+Delete a pull request comment reaction
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+| comment_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The unique identifier of the comment. | integer in path | `undefined` |
+| reaction_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The unique identifier of the reaction. | integer in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["204"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

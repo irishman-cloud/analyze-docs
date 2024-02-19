@@ -1,0 +1,267 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/search/labels`
+
+Search labels
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| repository_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The id of the repository. | integer in query | `undefined` |
+| q <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The search keywords. This endpoint does not accept qualifiers in the query. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). | string in query | `undefined` |
+| sort  | Sorts the results of your query by when the label was `created` or `updated`. Default: [best match](https://docs.github.com/rest/reference/search#ranking-search-results) | string in query | `undefined` |
+| order  | Determines whether the first search result returned is the highest number of matches (`desc`) or lowest number of matches (`asc`). This parameter is ignored unless you provide `sort`. | string in query | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "304", "403", "404", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "items": [
+        {
+            "node_id": "",
+            "url": "",
+            "name": "",
+            "color": "",
+            "description": "",
+            "text_matches": [
+                {
+                    "object_url": "",
+                    "object_type": "",
+                    "property": "",
+                    "fragment": "",
+                    "matches": [
+                        {
+                            "text": "",
+                            "indices": []
+                        },
+                        {
+                            "text": "",
+                            "indices": [
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "text": "",
+                            "indices": [
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "object_url": "",
+                    "object_type": "",
+                    "property": "",
+                    "fragment": "",
+                    "matches": [
+                        {
+                            "text": "",
+                            "indices": []
+                        },
+                        {
+                            "text": "",
+                            "indices": []
+                        },
+                        {
+                            "text": "",
+                            "indices": [
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "object_url": "",
+                    "object_type": "",
+                    "property": "",
+                    "fragment": "",
+                    "matches": [
+                        {
+                            "text": "",
+                            "indices": [
+                                null
+                            ]
+                        },
+                        {
+                            "text": "",
+                            "indices": [
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "text": "",
+                            "indices": [
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "text": "",
+                            "indices": [
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "object_url": "",
+                    "object_type": "",
+                    "property": "",
+                    "fragment": "",
+                    "matches": [
+                        {
+                            "text": "",
+                            "indices": []
+                        },
+                        {
+                            "text": "",
+                            "indices": [
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "node_id": "",
+            "url": "",
+            "name": "",
+            "color": "",
+            "description": "",
+            "text_matches": []
+        },
+        {
+            "node_id": "",
+            "url": "",
+            "name": "",
+            "color": "",
+            "description": "",
+            "text_matches": []
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

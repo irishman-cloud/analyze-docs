@@ -1,0 +1,117 @@
+import { Tabs } from 'nextra/components'
+
+# PATCH - `/orgs/{org}`
+
+Update an organization
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| org <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The organization name. The name is not case sensitive. | string in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "409", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "login": "",
+    "id": 1,
+    "node_id": "",
+    "url": "",
+    "repos_url": "",
+    "events_url": "",
+    "hooks_url": "",
+    "issues_url": "",
+    "members_url": "",
+    "public_members_url": "",
+    "avatar_url": "",
+    "description": "",
+    "name": "",
+    "company": "",
+    "blog": "",
+    "location": "",
+    "email": "",
+    "twitter_username": "",
+    "is_verified": true,
+    "has_organization_projects": true,
+    "has_repository_projects": true,
+    "public_repos": 2,
+    "public_gists": 1,
+    "followers": 20,
+    "following": 0,
+    "html_url": "",
+    "created_at": "",
+    "type": "",
+    "total_private_repos": 100,
+    "owned_private_repos": 100,
+    "private_gists": 81,
+    "disk_usage": 10000,
+    "collaborators": 8,
+    "billing_email": "",
+    "plan": {
+        "name": ""
+    },
+    "default_repository_permission": "",
+    "members_can_create_repositories": true,
+    "two_factor_requirement_enabled": true,
+    "members_allowed_repository_creation_type": "",
+    "members_can_create_public_repositories": true,
+    "members_can_create_private_repositories": true,
+    "members_can_create_internal_repositories": true,
+    "members_can_create_pages": true,
+    "members_can_create_public_pages": true,
+    "members_can_create_private_pages": true,
+    "members_can_fork_private_repositories": false,
+    "web_commit_signoff_required": false,
+    "updated_at": "",
+    "advanced_security_enabled_for_new_repositories": false,
+    "dependabot_alerts_enabled_for_new_repositories": false,
+    "dependabot_security_updates_enabled_for_new_repositories": false,
+    "dependency_graph_enabled_for_new_repositories": false,
+    "secret_scanning_enabled_for_new_repositories": false,
+    "secret_scanning_push_protection_enabled_for_new_repositories": false
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+Validation failed
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

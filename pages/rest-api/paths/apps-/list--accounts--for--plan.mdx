@@ -1,0 +1,299 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/marketplace_listing/plans/{plan_id}/accounts`
+
+List accounts for a plan
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| plan_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The unique identifier of the plan. | integer in path | `undefined` |
+| sort  | The property to sort the results by. `created` means when the repository was starred. `updated` means when the repository was last pushed to. | string in query | `undefined` |
+| direction  | To return the oldest accounts first, set to `asc`. Ignored without the `sort` parameter. | string in query | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "401", "404", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+[
+    {
+        "url": "",
+        "type": "",
+        "login": "",
+        "organization_billing_email": "",
+        "email": "",
+        "marketplace_pending_change": {
+            "effective_date": "",
+            "plan": {
+                "url": "",
+                "accounts_url": "",
+                "id": 1313,
+                "number": 3,
+                "name": "",
+                "description": "",
+                "monthly_price_in_cents": 1099,
+                "yearly_price_in_cents": 11870,
+                "price_model": "",
+                "has_free_trial": true,
+                "unit_name": "",
+                "state": "",
+                "bullets": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        },
+        "marketplace_purchase": {
+            "billing_cycle": "",
+            "next_billing_date": "",
+            "free_trial_ends_on": "",
+            "updated_at": "",
+            "plan": {
+                "url": "",
+                "accounts_url": "",
+                "id": 1313,
+                "number": 3,
+                "name": "",
+                "description": "",
+                "monthly_price_in_cents": 1099,
+                "yearly_price_in_cents": 11870,
+                "price_model": "",
+                "has_free_trial": true,
+                "unit_name": "",
+                "state": "",
+                "bullets": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        }
+    },
+    {
+        "url": "",
+        "type": "",
+        "login": "",
+        "organization_billing_email": "",
+        "email": "",
+        "marketplace_pending_change": {
+            "effective_date": "",
+            "plan": {
+                "url": "",
+                "accounts_url": "",
+                "id": 1313,
+                "number": 3,
+                "name": "",
+                "description": "",
+                "monthly_price_in_cents": 1099,
+                "yearly_price_in_cents": 11870,
+                "price_model": "",
+                "has_free_trial": true,
+                "unit_name": "",
+                "state": "",
+                "bullets": []
+            }
+        },
+        "marketplace_purchase": {
+            "billing_cycle": "",
+            "next_billing_date": "",
+            "free_trial_ends_on": "",
+            "updated_at": "",
+            "plan": {
+                "url": "",
+                "accounts_url": "",
+                "id": 1313,
+                "number": 3,
+                "name": "",
+                "description": "",
+                "monthly_price_in_cents": 1099,
+                "yearly_price_in_cents": 11870,
+                "price_model": "",
+                "has_free_trial": true,
+                "unit_name": "",
+                "state": "",
+                "bullets": []
+            }
+        }
+    },
+    {
+        "url": "",
+        "type": "",
+        "login": "",
+        "organization_billing_email": "",
+        "email": "",
+        "marketplace_pending_change": {
+            "effective_date": "",
+            "plan": {
+                "url": "",
+                "accounts_url": "",
+                "id": 1313,
+                "number": 3,
+                "name": "",
+                "description": "",
+                "monthly_price_in_cents": 1099,
+                "yearly_price_in_cents": 11870,
+                "price_model": "",
+                "has_free_trial": true,
+                "unit_name": "",
+                "state": "",
+                "bullets": [
+                    ""
+                ]
+            }
+        },
+        "marketplace_purchase": {
+            "billing_cycle": "",
+            "next_billing_date": "",
+            "free_trial_ends_on": "",
+            "updated_at": "",
+            "plan": {
+                "url": "",
+                "accounts_url": "",
+                "id": 1313,
+                "number": 3,
+                "name": "",
+                "description": "",
+                "monthly_price_in_cents": 1099,
+                "yearly_price_in_cents": 11870,
+                "price_model": "",
+                "has_free_trial": true,
+                "unit_name": "",
+                "state": "",
+                "bullets": []
+            }
+        }
+    },
+    {
+        "url": "",
+        "type": "",
+        "login": "",
+        "organization_billing_email": "",
+        "email": "",
+        "marketplace_pending_change": {
+            "effective_date": "",
+            "plan": {
+                "url": "",
+                "accounts_url": "",
+                "id": 1313,
+                "number": 3,
+                "name": "",
+                "description": "",
+                "monthly_price_in_cents": 1099,
+                "yearly_price_in_cents": 11870,
+                "price_model": "",
+                "has_free_trial": true,
+                "unit_name": "",
+                "state": "",
+                "bullets": []
+            }
+        },
+        "marketplace_purchase": {
+            "billing_cycle": "",
+            "next_billing_date": "",
+            "free_trial_ends_on": "",
+            "updated_at": "",
+            "plan": {
+                "url": "",
+                "accounts_url": "",
+                "id": 1313,
+                "number": 3,
+                "name": "",
+                "description": "",
+                "monthly_price_in_cents": 1099,
+                "yearly_price_in_cents": 11870,
+                "price_model": "",
+                "has_free_trial": true,
+                "unit_name": "",
+                "state": "",
+                "bullets": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        }
+    }
+]
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

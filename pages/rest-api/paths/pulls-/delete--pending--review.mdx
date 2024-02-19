@@ -1,0 +1,112 @@
+import { Tabs } from 'nextra/components'
+
+# DELETE - `/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}`
+
+Delete a pending review for a pull request
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+| pull_number <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The number that identifies the pull request. | integer in path | `undefined` |
+| review_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The unique identifier of the review. | integer in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "404", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "id": 42,
+    "node_id": "",
+    "user": {
+        "name": "",
+        "email": "",
+        "login": "",
+        "id": 1,
+        "node_id": "",
+        "avatar_url": "",
+        "gravatar_id": "",
+        "url": "",
+        "html_url": "",
+        "followers_url": "",
+        "following_url": "",
+        "gists_url": "",
+        "starred_url": "",
+        "subscriptions_url": "",
+        "organizations_url": "",
+        "repos_url": "",
+        "events_url": "",
+        "received_events_url": "",
+        "type": "",
+        "starred_at": ""
+    },
+    "body": "",
+    "state": "",
+    "html_url": "",
+    "pull_request_url": "",
+    "_links": {
+        "html": {
+            "href": ""
+        },
+        "pull_request": {
+            "href": ""
+        }
+    },
+    "submitted_at": "",
+    "commit_id": "",
+    "body_html": "",
+    "body_text": "",
+    "author_association": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        "",
+        ""
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

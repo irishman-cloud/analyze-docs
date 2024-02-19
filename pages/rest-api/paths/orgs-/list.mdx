@@ -1,0 +1,87 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/organizations`
+
+List organizations
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| since  | An organization ID. Only return organizations with an ID greater than this ID. | integer in query | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "304"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+[
+    {
+        "login": "",
+        "id": 1,
+        "node_id": "",
+        "url": "",
+        "repos_url": "",
+        "events_url": "",
+        "hooks_url": "",
+        "issues_url": "",
+        "members_url": "",
+        "public_members_url": "",
+        "avatar_url": "",
+        "description": ""
+    },
+    {
+        "login": "",
+        "id": 1,
+        "node_id": "",
+        "url": "",
+        "repos_url": "",
+        "events_url": "",
+        "hooks_url": "",
+        "issues_url": "",
+        "members_url": "",
+        "public_members_url": "",
+        "avatar_url": "",
+        "description": ""
+    },
+    {
+        "login": "",
+        "id": 1,
+        "node_id": "",
+        "url": "",
+        "repos_url": "",
+        "events_url": "",
+        "hooks_url": "",
+        "issues_url": "",
+        "members_url": "",
+        "public_members_url": "",
+        "avatar_url": "",
+        "description": ""
+    }
+]
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

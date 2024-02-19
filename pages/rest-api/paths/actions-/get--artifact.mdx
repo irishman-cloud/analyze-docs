@@ -1,0 +1,50 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/repos/{owner}/{repo}/actions/artifacts/{artifact_id}`
+
+Get an artifact
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+| artifact_id <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The unique identifier of the artifact. | integer in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "id": 5,
+    "node_id": "",
+    "name": "",
+    "size_in_bytes": 12345,
+    "url": "",
+    "archive_download_url": "",
+    "created_at": "",
+    "expires_at": "",
+    "updated_at": "",
+    "workflow_run": {
+        "id": 10,
+        "repository_id": 42,
+        "head_repository_id": 42,
+        "head_branch": "",
+        "head_sha": ""
+    }
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

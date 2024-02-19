@@ -1,0 +1,109 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/issues`
+
+List issues assigned to the authenticated user
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| filter  | Indicates which sorts of issues to return. `assigned` means issues assigned to you. `created` means issues created by you. `mentioned` means issues mentioning you. `subscribed` means issues you're subscribed to updates for. `all` or `repos` means all issues you can see, regardless of participation or creation. | string in query | `undefined` |
+| state  | Indicates the state of the issues to return. | string in query | `undefined` |
+| labels  | A list of comma separated label names. Example: `bug,ui,@high` | string in query | `undefined` |
+| sort  | What to sort results by. | string in query | `undefined` |
+| direction  | The direction to sort the results by. | string in query | `undefined` |
+| since  | Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. | string in query | `undefined` |
+| collab  |  | boolean in query | `undefined` |
+| orgs  |  | boolean in query | `undefined` |
+| owned  |  | boolean in query | `undefined` |
+| pulls  |  | boolean in query | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "304", "404", "422"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+[]
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

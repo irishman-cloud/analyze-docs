@@ -1,0 +1,427 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/repos/{owner}/{repo}/compare/{basehead}`
+
+Compare two commits
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| basehead <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The base branch and head branch to compare. This parameter expects the format `{base}...{head}`. | string in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200", "404", "500", "503"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "url": "",
+    "html_url": "",
+    "permalink_url": "",
+    "diff_url": "",
+    "patch_url": "",
+    "base_commit": {
+        "url": "",
+        "sha": "",
+        "node_id": "",
+        "html_url": "",
+        "comments_url": "",
+        "commit": {
+            "url": "",
+            "author": {
+                "name": "",
+                "email": "",
+                "date": ""
+            },
+            "committer": {
+                "name": "",
+                "email": "",
+                "date": ""
+            },
+            "message": "",
+            "comment_count": 0,
+            "tree": {
+                "sha": "",
+                "url": ""
+            },
+            "verification": {
+                "reason": "",
+                "payload": "",
+                "signature": ""
+            }
+        },
+        "author": {
+            "name": "",
+            "email": "",
+            "login": "",
+            "id": 1,
+            "node_id": "",
+            "avatar_url": "",
+            "gravatar_id": "",
+            "url": "",
+            "html_url": "",
+            "followers_url": "",
+            "following_url": "",
+            "gists_url": "",
+            "starred_url": "",
+            "subscriptions_url": "",
+            "organizations_url": "",
+            "repos_url": "",
+            "events_url": "",
+            "received_events_url": "",
+            "type": "",
+            "starred_at": ""
+        },
+        "committer": {
+            "name": "",
+            "email": "",
+            "login": "",
+            "id": 1,
+            "node_id": "",
+            "avatar_url": "",
+            "gravatar_id": "",
+            "url": "",
+            "html_url": "",
+            "followers_url": "",
+            "following_url": "",
+            "gists_url": "",
+            "starred_url": "",
+            "subscriptions_url": "",
+            "organizations_url": "",
+            "repos_url": "",
+            "events_url": "",
+            "received_events_url": "",
+            "type": "",
+            "starred_at": ""
+        },
+        "parents": [
+            {
+                "sha": "",
+                "url": "",
+                "html_url": ""
+            },
+            {
+                "sha": "",
+                "url": "",
+                "html_url": ""
+            },
+            {
+                "sha": "",
+                "url": "",
+                "html_url": ""
+            },
+            {
+                "sha": "",
+                "url": "",
+                "html_url": ""
+            }
+        ],
+        "stats": {},
+        "files": [
+            {
+                "sha": "",
+                "filename": "",
+                "status": "",
+                "additions": 103,
+                "deletions": 21,
+                "changes": 124,
+                "blob_url": "",
+                "raw_url": "",
+                "contents_url": "",
+                "patch": "",
+                "previous_filename": ""
+            }
+        ]
+    },
+    "merge_base_commit": {
+        "url": "",
+        "sha": "",
+        "node_id": "",
+        "html_url": "",
+        "comments_url": "",
+        "commit": {
+            "url": "",
+            "author": {
+                "name": "",
+                "email": "",
+                "date": ""
+            },
+            "committer": {
+                "name": "",
+                "email": "",
+                "date": ""
+            },
+            "message": "",
+            "comment_count": 0,
+            "tree": {
+                "sha": "",
+                "url": ""
+            },
+            "verification": {
+                "reason": "",
+                "payload": "",
+                "signature": ""
+            }
+        },
+        "author": {
+            "name": "",
+            "email": "",
+            "login": "",
+            "id": 1,
+            "node_id": "",
+            "avatar_url": "",
+            "gravatar_id": "",
+            "url": "",
+            "html_url": "",
+            "followers_url": "",
+            "following_url": "",
+            "gists_url": "",
+            "starred_url": "",
+            "subscriptions_url": "",
+            "organizations_url": "",
+            "repos_url": "",
+            "events_url": "",
+            "received_events_url": "",
+            "type": "",
+            "starred_at": ""
+        },
+        "committer": {
+            "name": "",
+            "email": "",
+            "login": "",
+            "id": 1,
+            "node_id": "",
+            "avatar_url": "",
+            "gravatar_id": "",
+            "url": "",
+            "html_url": "",
+            "followers_url": "",
+            "following_url": "",
+            "gists_url": "",
+            "starred_url": "",
+            "subscriptions_url": "",
+            "organizations_url": "",
+            "repos_url": "",
+            "events_url": "",
+            "received_events_url": "",
+            "type": "",
+            "starred_at": ""
+        },
+        "parents": [
+            {
+                "sha": "",
+                "url": "",
+                "html_url": ""
+            }
+        ],
+        "stats": {},
+        "files": [
+            {
+                "sha": "",
+                "filename": "",
+                "status": "",
+                "additions": 103,
+                "deletions": 21,
+                "changes": 124,
+                "blob_url": "",
+                "raw_url": "",
+                "contents_url": "",
+                "patch": "",
+                "previous_filename": ""
+            }
+        ]
+    },
+    "status": "",
+    "ahead_by": 4,
+    "behind_by": 5,
+    "total_commits": 6,
+    "commits": [
+        {
+            "url": "",
+            "sha": "",
+            "node_id": "",
+            "html_url": "",
+            "comments_url": "",
+            "commit": {
+                "url": "",
+                "author": {
+                    "name": "",
+                    "email": "",
+                    "date": ""
+                },
+                "committer": {
+                    "name": "",
+                    "email": "",
+                    "date": ""
+                },
+                "message": "",
+                "comment_count": 0,
+                "tree": {
+                    "sha": "",
+                    "url": ""
+                },
+                "verification": {
+                    "reason": "",
+                    "payload": "",
+                    "signature": ""
+                }
+            },
+            "author": {
+                "name": "",
+                "email": "",
+                "login": "",
+                "id": 1,
+                "node_id": "",
+                "avatar_url": "",
+                "gravatar_id": "",
+                "url": "",
+                "html_url": "",
+                "followers_url": "",
+                "following_url": "",
+                "gists_url": "",
+                "starred_url": "",
+                "subscriptions_url": "",
+                "organizations_url": "",
+                "repos_url": "",
+                "events_url": "",
+                "received_events_url": "",
+                "type": "",
+                "starred_at": ""
+            },
+            "committer": {
+                "name": "",
+                "email": "",
+                "login": "",
+                "id": 1,
+                "node_id": "",
+                "avatar_url": "",
+                "gravatar_id": "",
+                "url": "",
+                "html_url": "",
+                "followers_url": "",
+                "following_url": "",
+                "gists_url": "",
+                "starred_url": "",
+                "subscriptions_url": "",
+                "organizations_url": "",
+                "repos_url": "",
+                "events_url": "",
+                "received_events_url": "",
+                "type": "",
+                "starred_at": ""
+            },
+            "parents": [],
+            "stats": {},
+            "files": [
+                {
+                    "sha": "",
+                    "filename": "",
+                    "status": "",
+                    "additions": 103,
+                    "deletions": 21,
+                    "changes": 124,
+                    "blob_url": "",
+                    "raw_url": "",
+                    "contents_url": "",
+                    "patch": "",
+                    "previous_filename": ""
+                },
+                {
+                    "sha": "",
+                    "filename": "",
+                    "status": "",
+                    "additions": 103,
+                    "deletions": 21,
+                    "changes": 124,
+                    "blob_url": "",
+                    "raw_url": "",
+                    "contents_url": "",
+                    "patch": "",
+                    "previous_filename": ""
+                },
+                {
+                    "sha": "",
+                    "filename": "",
+                    "status": "",
+                    "additions": 103,
+                    "deletions": 21,
+                    "changes": 124,
+                    "blob_url": "",
+                    "raw_url": "",
+                    "contents_url": "",
+                    "patch": "",
+                    "previous_filename": ""
+                }
+            ]
+        }
+    ],
+    "files": []
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "code": "",
+    "message": "",
+    "documentation_url": ""
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

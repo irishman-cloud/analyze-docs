@@ -1,0 +1,71 @@
+import { Tabs } from 'nextra/components'
+
+# GET - `/enterprises/{enterprise}/actions/runner-groups`
+
+List self-hosted runner groups for an enterprise
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| enterprise <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The slug version of the enterprise name. You can also substitute this value with the enterprise id. | string in path | `undefined` |
+| per_page  | The number of results per page (max 100). | integer in query | `undefined` |
+| page  | Page number of the results to fetch. | integer in query | `undefined` |
+| visible_to_organization  | Only return runner groups that are allowed to be used by this organization. | string in query | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["200"]}>
+
+<Tabs.Tab>
+
+Response
+
+```json
+
+{
+    "runner_groups": [
+        {
+            "name": "",
+            "visibility": "",
+            "selected_organizations_url": "",
+            "runners_url": "",
+            "selected_workflows": [
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "visibility": "",
+            "selected_organizations_url": "",
+            "runners_url": "",
+            "selected_workflows": [
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "visibility": "",
+            "selected_organizations_url": "",
+            "runners_url": "",
+            "selected_workflows": [
+                "",
+                "",
+                "",
+                ""
+            ]
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>

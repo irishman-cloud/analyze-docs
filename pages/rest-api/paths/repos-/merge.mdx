@@ -1,0 +1,232 @@
+import { Tabs } from 'nextra/components'
+
+# POST - `/repos/{owner}/{repo}/merges`
+
+Merge a branch
+
+## Parameters
+
+| Name | Description | Type | Example |
+| :---- | :---- | :---- | :---- |
+| owner <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The account owner of the repository. The name is not case sensitive. | string in path | `undefined` |
+| repo <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Required</span> | The name of the repository. The name is not case sensitive. | string in path | `undefined` |
+
+## Responses
+
+Blah blah blah.
+
+<Tabs items={["201", "204", "403", "404", "409", "422"]}>
+
+<Tabs.Tab>
+
+Successful Response (The resulting merge commit)
+
+```json
+
+{
+    "url": "",
+    "sha": "",
+    "node_id": "",
+    "html_url": "",
+    "comments_url": "",
+    "commit": {
+        "url": "",
+        "author": {
+            "name": "",
+            "email": "",
+            "date": ""
+        },
+        "committer": {
+            "name": "",
+            "email": "",
+            "date": ""
+        },
+        "message": "",
+        "comment_count": 0,
+        "tree": {
+            "sha": "",
+            "url": ""
+        },
+        "verification": {
+            "reason": "",
+            "payload": "",
+            "signature": ""
+        }
+    },
+    "author": {
+        "name": "",
+        "email": "",
+        "login": "",
+        "id": 1,
+        "node_id": "",
+        "avatar_url": "",
+        "gravatar_id": "",
+        "url": "",
+        "html_url": "",
+        "followers_url": "",
+        "following_url": "",
+        "gists_url": "",
+        "starred_url": "",
+        "subscriptions_url": "",
+        "organizations_url": "",
+        "repos_url": "",
+        "events_url": "",
+        "received_events_url": "",
+        "type": "",
+        "starred_at": ""
+    },
+    "committer": {
+        "name": "",
+        "email": "",
+        "login": "",
+        "id": 1,
+        "node_id": "",
+        "avatar_url": "",
+        "gravatar_id": "",
+        "url": "",
+        "html_url": "",
+        "followers_url": "",
+        "following_url": "",
+        "gists_url": "",
+        "starred_url": "",
+        "subscriptions_url": "",
+        "organizations_url": "",
+        "repos_url": "",
+        "events_url": "",
+        "received_events_url": "",
+        "type": "",
+        "starred_at": ""
+    },
+    "parents": [
+        {
+            "sha": "",
+            "url": "",
+            "html_url": ""
+        },
+        {
+            "sha": "",
+            "url": "",
+            "html_url": ""
+        }
+    ],
+    "stats": {},
+    "files": [
+        {
+            "sha": "",
+            "filename": "",
+            "status": "",
+            "additions": 103,
+            "deletions": 21,
+            "changes": 124,
+            "blob_url": "",
+            "raw_url": "",
+            "contents_url": "",
+            "patch": "",
+            "previous_filename": ""
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+Response when already merged
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "url": "",
+    "status": ""
+}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+Not Found when the base or head does not exist
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+Conflict when there is a merge conflict
+
+```json
+
+{}
+
+```
+
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+
+
+```json
+
+{
+    "message": "",
+    "documentation_url": "",
+    "errors": [
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        },
+        {
+            "resource": "",
+            "field": "",
+            "message": "",
+            "code": "",
+            "value": {}
+        }
+    ]
+}
+
+```
+
+</Tabs.Tab>
+
+</Tabs>
